@@ -1,0 +1,126 @@
+/* Reset & Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Navigation */
+header {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.logo {
+  font-size: 1.8rem;
+  color: #fff;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: #00ffc8;
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('https://images.unsplash.com/photo-1549921296-3a0f8f5b9942') no-repeat center center/cover;
+}
+.glass-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+.glass-box h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 15px;
+}
+.glass-box p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+.cta {
+  padding: 10px 30px;
+  background: #00ffc8;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #111;
+  transition: all 0.3s ease;
+}
+.cta:hover {
+  background: #00bfa6;
+  transform: scale(1.05);
+}
+
+/* Services & Other Sections */
+.services {
+  padding: 60px 30px;
+  background: #121212;
+  text-align: center;
+}
+.services h3 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 255, 200, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.25);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #0a0a0a;
+  font-size: 0.9rem;
+  color: #aaa;
+}
